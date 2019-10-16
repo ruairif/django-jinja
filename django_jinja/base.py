@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import re
+import six
 import os
 import os.path as path
 from importlib import import_module
@@ -8,7 +9,7 @@ from importlib import import_module
 import django
 from django.conf import settings
 from django.template.context import BaseContext
-from django.utils import six
+
 
 
 def dict_from_context(context):

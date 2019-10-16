@@ -10,6 +10,7 @@ django_jinja easy with django 1.8.
 from __future__ import absolute_import
 
 import copy
+import six
 import sys
 import os
 import os.path as path
@@ -29,7 +30,6 @@ from django.template.backends.utils import csrf_input_lazy
 from django.template.backends.utils import csrf_token_lazy
 from django.template.context import BaseContext
 from django.utils import lru_cache
-from django.utils import six
 from django.utils.encoding import smart_text
 from django.utils.functional import SimpleLazyObject
 from django.utils.functional import cached_property
